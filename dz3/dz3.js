@@ -7,7 +7,7 @@ let time = document.querySelector('#time')
 let ps = document.querySelector('#ps')
 let locobj = {
     str: '',
-    ti: ''
+    tt: ''
 };
 let lols = []
 let est=[]
@@ -72,8 +72,9 @@ btndo.addEventListener('click', function () {
     list.innerHTML += '<li id="lies"><span id ="li"><button id="todo"><img src="ag800q13r2knpr5camh045e6fo.png" width = "15" height = "15"></button>' + text.value + '</span><span id="timer"></span></li>'
     lols[Object.keys(lols).length] = { tt: time.value, str: text.value }
     for(let i in lols){
-    a++
+
     est[a]=lols[i].tt
+    a++
     }
     text.value = ''
     ps.innerHTML = 'Дело добавлено.'
